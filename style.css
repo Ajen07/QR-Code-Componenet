@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -9,16 +9,24 @@
 img {
     display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
     /* padding: 0.5rem; */
 }
 
-.nowrap {
+figcaption {
+    position: absolute;
+    left: -100000px;
+}
+
+.nowrape {
     white-space: nowrap;
 }
 
+
 body {
     font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -26,62 +34,73 @@ body {
     background-color: hsl(220, 100%, 90%);
 }
 
-p {
-    font-size: 15px;
+.section-center {
+    background-color: white;
+    border-radius: 1rem;
+    padding-inline: 0.8rem;
+    padding-top: 0.8rem;
+    width: 20vw;
 }
 
-div {
-    padding: 1rem;
-}
-
-.qrcode {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 0.5rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-
-
-}
-
-figcaption {
-    position: absolute;
-    left: -10000px;
+h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding-inline: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
-    padding: 1rem;
+    color: hsla(217, 45%, 22%, 0.534);
     text-align: center;
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding-inline: 0.5rem;
+    margin-bottom: 2rem;
+}
+@media screen and (min-width:320px) {
+    .section-center {
+        width: 80vw;
+        padding-inline: 1rem;
+        padding-top: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+
+    }
 }
 
-.bold {
+@media screen and (min-width:768px) {
+    .section-center {
+        width: 40vw;
+    }
 
-    font-size: 1.5rem;
-    text-align: center;
+    h1 {
+        font-size: 1.2rem;
+
+    }
 }
 
-.lessbold {
-    text-align: center;
-    font-weight: 400;
-    color: hsl(212, 45%, 89%);
-}
+@media screen and (min-width:1024px) {
+    .section-center {
+        width: 30vw;
+    }
 
-@media screen and (min-width:375px) {
-    .qrcode {
-        width: 80%;
-        height: 80vh;
+    h1 {
+        font-size: 1.2rem;
+
     }
 }
 
 @media screen and (min-width:1440px) {
-    .qrcode {
-        width: 25vw;
-        height: 75vh;
+    .section-center {
+        width: 20vw;
     }
-    .lessbold{
-        font-size: 1rem;
+
+    h1 {
+        font-size: 1.2rem;
+
     }
+
 }
